@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aria</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+        content="screw air compressor, rotary screw compressors, industrial compressed air systems, air compressor, energy efficient air compressors, oil lubricated screw compressors, compressed air applications, Aria"
+        name="keywords">
+    <meta
+        content="Explore Aria’s advanced screw air compressor solutions designed for diverse industries. From small workshops to large plants, our energy-efficient systems ensure maximum productivity, durability, and long-term cost savings."
+        name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand ps-6">
+                <img src="img/KPCL -Aria-Logo-White.png" alt="logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse pe-6" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="about.html" class="nav-item nav-link">About&nbsp;Us</a>
+                    <a href="Solutions.html" class="nav-item nav-link active">Solutions</a>
+                    <a href="After Market.html" class="nav-item nav-link">After&nbsp;Market</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact&nbsp;Us</a>
+
+                </div>
+                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal"
+                    data-bs-target="#searchModal"><i class="fa fa-search search-icon"></i></butaton>
+                <button class="btn btn-primary py-2 px-4 ms-3" onclick="openForm()">
+                    Request&nbsp;a&nbsp;Quote
+                </button>
+            </div>
+
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header-solutions" style="margin-bottom: 10px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 mb-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">High – Performance <br> Compressed Air Solutions
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background:rgba(32, 32, 32, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+    <!-- Solutions Product details Start -->
+    <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-0">
+            <div class="row g-5 py-5">
+                <div class="col-lg-6">
+
+                    <!-- Large Image -->
+                    <div class="image-box-wrapper mb-5">
+
+                        <div class="main-image-box">
+                            <img id="mainImage" class="img-fluid main-img" src="img/Product 1.png" alt="Image">
+
+                            <!-- Play Button -->
+                            <a href="https://www.youtube.com/watch?v=29BaxI08KbE" target="_blank"
+                                class="video-play-btn">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Small Images -->
+                    <!-- Thumbnail Carousel -->
+                    <div class="thumb-carousel-wrapper position-relative mt-2">
+
+                        <!-- Prev Button -->
+                        <button class="thumb-nav prev-btn" onclick="slideThumbs(-1)">
+                            <i class="fa fa-chevron-left"></i>
+                        </button>
+
+                        <!-- Thumbnails -->
+                        <div class="thumb-carousel">
+
+                            <div class="thumb-track" id="thumbTrack">
+
+                                <div class="thumb-item">
+                                    <img src="img/Product 1.png" class="img-fluid thumb-img"
+                                        onclick="changeImage(this)">
+                                </div>
+
+                                <div class="thumb-item">
+                                    <img src="img/Product 2.png" class="img-fluid thumb-img"
+                                        onclick="changeImage(this)">
+                                </div>
+
+                                <div class="thumb-item">
+                                    <img src="img/Product 3.png" class="img-fluid thumb-img"
+                                        onclick="changeImage(this)">
+                                </div>
+
+                                <div class="thumb-item">
+                                    <img src="img/Product 4.png" class="img-fluid thumb-img"
+                                        onclick="changeImage(this)">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Next Button -->
+                        <button class="thumb-nav next-btn" onclick="slideThumbs(1)">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- -----------------------Image carousel end------------------- -->
+
+                <div class="col-lg-6">
+                    <div class="section-title position-relative pb-3 mb-3">
+                        <h5 class="fw-bold text-primary text-uppercase">ARIA - SCREW AIR COMPRESSORS</h5>
+                    </div>
+                    <p><b>Capacity Range:</b> Capacity Range: 7.5 – 37 kW
+                        <hr>
+                        <b>Free Air Delivery:</b> Upto 234 CFM
+                        <hr>
+                        <b>Working Pressure:</b> Upto 7.5 bar
+                        <hr>
+                        <b>Type:</b> Oil Lubricated
+                        <hr>
+
+                        <b>Industry:</b> Auto & Auto Ancillaries | Chemical | Pharmaceuticals | Food & Beverage | Paper
+                        &
+                        Packaging | Plastics | Sorting | Distillery | Ceramic | Rubber | General Engineering |
+                        <hr>
+                        <b>Applications:</b> Process Air | Instrument Air | Service Air | Plant Air | Cleaning |
+                        Pneumatic
+                        Conveying | Pneumatic Tools | Automation | Drying | Utility Air
+                    </p>
+                    <a href="javascript:void(0);" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
+                        data-wow-delay="0.9s" onclick="openBrochureForm()">Brochure</a>&nbsp;&nbsp;
+
+                    <a href="javascript:void(0);" onclick="openForm()" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn"
+                        data-wow-delay="0.9s">Request
+                        a Quote</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Solutions Product details End -->
+
+    <div>
+        <img class="w-100 h-25 wow fadeInUp" src="img/Curve 1-02.png" alt="Curv">
+    </div>
+
+    <!--  Product info start -->
+    <!--  Why Aria? Start -->
+    <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-0">
+            <div class="row g-5">
+                <div>
+                    <div class="section-title position-relative pb-2 mb-3">
+                        <h5 class="fw-bold text-primary text-uppercase">Why Aria?</h5>
+                    </div>
+                    <p style="text-align: justify; padding-bottom: 30px;">Aria compressors are engineered for tropical
+                        conditions and built to perform reliably in extreme environments. Backed by global
+                        collaborations with SRM Sweden and City, University of London, our technology delivers superior
+                        efficiency,
+                        durability, and consistent performance. From small workshops to large industrial plants, Aria
+                        offers plug-and-play solutions designed for maximum uptime, energy efficiency, and long-term
+                        cost
+                        savings supported by a robust service network and smart monitoring systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Why Aria? end -->
+
+    <!--  What Sets Us Apart? start -->
+
+    <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-0">
+            <div class="row g-5">
+                <div>
+                    <div class="section-title position-relative pb-2 mb-3">
+                        <h5 class="fw-bold text-primary text-uppercase">What Sets Us Apart?</h5>
+                    </div>
+                    <ul class="pb-3">
+                        <li>Engineered for Indian conditions (heat, dust, voltage fluctuations)</li>
+                        <li>Proven reliability in demanding industrial environments</li>
+                        <li>Backed by Kirloskar’s engineering legacy</li>
+                        <li>Global technology partnerships</li>
+                        <li>Nationwide service and support network</li>
+                        <li>Smart monitoring for preventive maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  What Sets Us Apart? end -->
+
+    <!--  Features Start -->
+    <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-0">
+            <div class="row g-5">
+                <div>
+                    <div class="section-title position-relative pb-2 mb-3">
+                        <h5 class="fw-bold text-primary text-uppercase">Features</h5>
+                    </div>
+
+                    <ul class="pb-3">
+                        <li>
+                            <strong>Advanced Airend Technology (KOSMIC K-Profile Rotors)</strong><br>
+                            Delivers superior efficiency, reduced internal leakage, and consistent air output.
+                        </li>
+
+                        <li>
+                            <strong>Direct Drive Transmission System</strong><br>
+                            Eliminates power loss, improves reliability, and reduces maintenance.
+                        </li>
+
+                        <li>
+                            <strong>Low-Speed Screw Block Design</strong><br>
+                            Reduces vibration and wear, extending machine life and improving stability.
+                        </li>
+
+                        <li>
+                            <strong>Tropical-Tough Cooling System</strong><br>
+                            Designed to operate reliably in extreme ambient temperatures up to 55°C.
+                        </li>
+
+                        <li>
+                            <strong>High-Efficiency IE2 / IE3 Electric Motors</strong><br>
+                            Ensures stable performance even under voltage fluctuations and harsh conditions.
+                        </li>
+
+                        <li>
+                            <strong>Advanced Air-Oil Separation System</strong><br>
+                            Minimises pressure drop and optimises energy consumption.
+                        </li>
+
+                        <li>
+                            <strong>Smart Controller with Bluetooth Connectivity</strong><br>
+                            Enables real-time monitoring, fault diagnostics, and preventive maintenance alerts.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Features end -->
+
+    <!--  Benefits Start -->
+    <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-0">
+            <div class="row g-5">
+                <div>
+                    <div class="section-title position-relative pb-2 mb-3">
+                        <h5 class="fw-bold text-primary text-uppercase">Benefits</h5>
+                    </div>
+
+                    <ul class="pb-3">
+                        <li>
+                            <strong>Lower Total Cost of Ownership</strong><br>
+                            Energy-efficient design and reduced maintenance significantly cut operating costs.
+                        </li>
+
+                        <li>
+                            <strong>Reliable in Harsh Conditions</strong><br>
+                            Reliable components and smart monitoring minimise unexpected breakdowns.
+                        </li>
+
+                        <li>
+                            <strong>Extended Equipment Life</strong><br>
+                            Robust design supports up to 60,000+ operating hours.
+                        </li>
+
+                        <li>
+                            <strong>Reduced Downtime</strong><br>
+                            Quick service response and dependable spare parts availability.
+                        </li>
+
+                        <li>
+                            <strong>Easy Installation & Operation</strong><br>
+                            Plug-and-play design with intuitive controls simplifies deployment.
+                        </li>
+
+                        <li>
+                            <strong>Improved Air Quality</strong><br>
+                            Advanced filtration protects downstream equipment and processes.
+                        </li>
+
+                        <li>
+                            <strong>Strong After-Sales Support</strong><br>
+                            Backed by Kirloskar’s extensive service network and genuine OEM spares.
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Benefits end -->
+    <!--  Product info End -->
+
+    <!-- Form Start -->
+    <div class="container-fluid bg-light text-primary mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 ">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h1 class="mb-0">Connect With Us</h1>
+            </div>
+            <form class="custom-form" id="contactForm" method="POST">
+                <div class="row g-3">
+
+                    <!-- Row 1 -->
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="fullName" placeholder="Full Name *" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- <input type="tel" class="form-control" placeholder="+91 Mobile Number *"
+                            pattern="^\+91[0-9]{10}$" title="Enter mobile number in format +911234567890" required> -->
+                        <!-- value="+91" -->
+                        <input type="tel" class="form-control" name="phone" placeholder="+919656XXXXXX *" maxlength="13"
+                            pattern="^\+91[0-9]{10}$" title="Enter 10 digits after +91 (Country code)" required
+                            oninput="this.value = this.value.replace(/[^0-9+]/g, '').replace(/(?!^\+)[+]/g, '')">
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- <input type="email" class="form-control" placeholder="Email Address *" required> -->
+                        <input type="email" class="form-control" name="email" placeholder="Email Address *"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            title="Enter a valid email address (e.g. name@example.com)" required>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="division" value="Aria Product Details" readonly>
+                    </div>
+
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="country" placeholder="Country *" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" name="location" placeholder="State / City *" required>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="col-12">
+                        <textarea class="form-control" name="message" placeholder="Your Message *" required></textarea>
+                    </div>
+
+                    <!-- Row 4 -->
+
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary px-5">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Form End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+
+                <div class="row gx-5">
+                    <div class="col-lg-3 col-md-12 pt-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Head Office</h3>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>
+                            <p class="mb-0">Plot No.1, Hadapsar Industrial Estate,
+                                Pune- 411 013, State- Maharashtra, India
+
+                            </p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <p class="mb-0">ariasales@kirloskar.com</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0">+91 (20) 2672 7000</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-printer  text-primary me-2"></i>
+                            <p class="mb-0">+91 (20) 2687 0297</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Quick Links</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="index.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                            <a class="text-light mb-2" href="about.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>About
+                                Us</a>
+                            <a class="text-light mb-2" href="Solutions.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Solutions</a>
+                            <a class="text-light mb-2" href="After Market.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>After
+                                Market</a>
+                            <a class="text-light" href="contact.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Contact
+                                Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Solutions</h3>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="Solutions-product-details.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Screw
+                                Air Compressors</a>
+                        </div>
+                    </div>
+                    <div class="link-animated col-lg-3 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <h3 class="text-light mb-0">Connect With Us</h3>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <p class="mb-0">ariasales@kirloskar.com</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <a class="text-light mb-0" href="javascript:void(0);" onclick="openForm()">
+                                <i class="bi bi-download text-primary me-2"></i>Request a Quote</a>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <a class="text-light mb-0" href="javascript:void(0);" onclick="openBrochureForm()">
+                                <i class="bi bi-download text-primary me-2"></i>Download Brochure</a>
+                        </div>
+                        <div class="link-animated d-flex flex-column justify-content-start">
+                            <div class="d-flex mb-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i
+                                        class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <a class="text-light mb-2" href="Privacy Policy.pdf"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Privacy
+                            Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #1e1e1f;">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="index.html">Aria</a>. All
+                            Rights
+                            Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- popup form request a quote start -->
+    <div id="RequestOuoteFormPopupSolutionsProduct" class="form-popup">
+
+        <div class="form-container col-lg-6">
+
+            <span class="close-btn" onclick="closeForm()">&times;</span>
+
+            <h3 class="text-center text-white mb-4">Request A Quote</h3>
+
+            <form class="quoteForm" id="requestaquotesolutionsproduct">
+                <div class="row g-3">
+
+                    <!-- Row 1 -->
+                    <div class="col-md-6">
+                        <input type="text" class="form-control custom-input" name="fullName" placeholder="Full Name *"
+                            required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control custom-input" name="phone" placeholder="+919656XXXXXX *"
+                            maxlength="13" pattern="^\+91[0-9]{10}$" required oninput="if(!this.value.startsWith('+91')) this.value = '+91'; 
+                        this.value = this.value.replace(/[^0-9+]/g, '').replace(/(?!^\+)[+]/g, '')">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="col-md-6">
+                        <input type="text" class="form-control custom-input" name="companyName"
+                            placeholder="Company Name *" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="text" class="form-control custom-input" name="location"
+                            placeholder="Location (State / City) *" required>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="col-md-6">
+                        <input type="email" class="form-control custom-input" name="email" placeholder="Email Address *"
+                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            title="Enter a valid email address (e.g. name@example.com)" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <textarea class="form-control custom-input" name="message" placeholder="Message *"
+                            required></textarea>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="col-12 text-center">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- popup form request a quote End -->
+
+    <!-- popup form Download Brochure Start -->
+    <div id="brochureFormPopup" class="popup-overlay">
+        <div class="popup-form col-lg-6">
+
+            <h3 class="text-center text-white mb-4">Download Brochure</h3>
+
+            <form class="brochureForm" id="brochuresolutionsproduct">
+
+                <div class="row g-3">
+
+                    <!-- Row 1 -->
+                    <div class="col-md-6">
+                        <input type="text" class="form-control custom-input" name="fullName" placeholder="Full Name *"
+                            required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control custom-input" name="phone" placeholder="+919656XXXXXX *"
+                            maxlength="13" pattern="^\+91[0-9]{10}$" required oninput="if(!this.value.startsWith('+91')) this.value = '+91'; 
+                        this.value = this.value.replace(/[^0-9+]/g, '').replace(/(?!^\+)[+]/g, '')">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="col-md-6">
+                        <input type="text" class="form-control custom-input" name="companyName"
+                            placeholder="Company Name *" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="text" class="form-control custom-input" name="location"
+                            placeholder="Location (State/City) *" required>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="col-md-6">
+                        <input type="email" class="form-control custom-input" name="email" placeholder="Email Address *"
+                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            title="Enter a valid email address (e.g. name@example.com)" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="text" class="form-control custom-input" name="message" placeholder="Message *">
+                    </div>
+
+                    <!-- Button Row -->
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-dark submit-btn">
+                            Download
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+
+            <!-- Close Button -->
+            <span class="close-btn" onclick="closeBrochureForm()">&times;</span>
+
+        </div>
+    </div>
+
+    <!-- popup form Download Brochure End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+
+    <script>
+        function openForm() {
+            document.getElementById("RequestOuoteFormPopupSolutionsProduct").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("RequestOuoteFormPopupSolutionsProduct").style.display = "none";
+        }
+
+        function openBrochureForm() {
+            document.getElementById("brochureFormPopup").style.display = "flex";
+        }
+
+        function closeBrochureForm() {
+            document.getElementById("brochureFormPopup").style.display = "none";
+        }
+
+        // Close when clicking outside
+        window.onclick = function (e) {
+            let popup = document.getElementById("brochureFormPopup");
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        }
+
+        // --------------------------------------------
+
+        function changeImage(element) {
+            document.getElementById("mainImage").src = element.src;
+        }
+
+        let currentSlide = 0;
+
+        function slideThumbs(direction) {
+
+            const track = document.getElementById("thumbTrack");
+            const totalItems = document.querySelectorAll(".thumb-item").length;
+
+            currentSlide += direction;
+
+            // Prevent extra sliding
+            if (currentSlide < 0) {
+                currentSlide = 0;
+            }
+
+            if (currentSlide > totalItems - 3) {
+                currentSlide = totalItems - 3;
+            }
+
+            track.style.transform =
+                `translateX(-${currentSlide * 33.33}%)`;
+        }
+
+        // ----------------------------------------------
+
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
